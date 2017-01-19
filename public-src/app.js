@@ -31,7 +31,7 @@ export default class App extends Component {
 			<Layout>
 				<Match pattern="/" component={ Home } exactly />
 				<Match pattern="/about" component={ About } />
-				<Match pattern="/blog" component={ Blog } />
+				<Match pattern="/blog/:key?" component={ Blog } />
 				<Match pattern="/contact" component={ Contact } />
 				<Match pattern="/portfolio" component={ Portfolio } />
 				<Match pattern="/resume" component={ Resume } />
