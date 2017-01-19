@@ -1,4 +1,4 @@
-import styles from './home.scss';
+import styles from './about.scss';
 
 import React, { Component } from 'react';
 
