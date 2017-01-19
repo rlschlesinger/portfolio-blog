@@ -12,7 +12,7 @@ export default class About extends Component {
 							<li className="work-item wow fadeIn" data-wow-delay="0.1s">
 								<a href="special-photographer-2-portfolio.html">
 									<div className="work-img">
-										<img src="images/photographer/photographer-2/photo-1.jpg" alt="" />
+										<img src={ require('./assets/images/photo-1.jpg') } alt="" />
 									</div>
 									<div className="work-intro">
 										<h3 className="work-title">Album 1</h3>
@@ -26,7 +26,7 @@ export default class About extends Component {
 							<li className="work-item wow fadeIn" data-wow-delay="0.2s">
 								<a href="special-photographer-2-portfolio.html">
 									<div className="work-img">
-										<img src="images/photographer/photographer-2/photo-2.jpg" alt="Work" />
+										<img src={ require('./assets/images/photo-2.jpg') } alt="" />
 									</div>
 									<div className="work-intro">
 										<h3 className="work-title">Album 2</h3>
@@ -40,7 +40,7 @@ export default class About extends Component {
 							<li className="work-item wow fadeIn" data-wow-delay="0.3s">
 								<a href="special-photographer-2-portfolio.html">
 									<div className="work-img">
-										<img src="images/photographer/photographer-2/photo-3.jpg" alt="Work" />
+										<img src={ require('./assets/images/photo-3.jpg') } alt="" />
 									</div>
 									<div className="work-intro">
 										<h3 className="work-title">Album 3</h3>
@@ -54,7 +54,7 @@ export default class About extends Component {
 							<li className="work-item wow fadeIn" data-wow-delay="0.4s">
 								<a href="special-photographer-2-portfolio.html">
 									<div className="work-img">
-										<img src="images/photographer/photographer-2/photo-4.jpg" alt="" />
+										<img src={ require('./assets/images/photo-4.jpg') } alt="" />
 									</div>
 									<div className="work-intro">
 										<h3 className="work-title">Album 1</h3>
@@ -68,7 +68,7 @@ export default class About extends Component {
 							<li className="work-item wow fadeIn" data-wow-delay="0.5s">
 								<a href="special-photographer-2-portfolio.html">
 									<div className="work-img">
-										<img src="images/photographer/photographer-2/photo-5.jpg" alt="Work" />
+										<img src={ require('./assets/images/photo-5.jpg') } alt="" />
 									</div>
 									<div className="work-intro">
 										<h3 className="work-title">Album 2</h3>
@@ -82,7 +82,7 @@ export default class About extends Component {
 							<li className="work-item wow fadeIn" data-wow-delay="0.6s">
 								<a href="special-photographer-2-portfolio.html">
 									<div className="work-img">
-										<img src="images/photographer/photographer-2/photo-6.jpg" alt="Work" />
+										<img src={ require('./assets/images/photo-6.jpg') } alt="" />
 									</div>
 									<div className="work-intro">
 										<h3 className="work-title">Album 3</h3>
@@ -96,7 +96,7 @@ export default class About extends Component {
 							<li className="work-item wow fadeIn" data-wow-delay="0.1s">
 								<a href="special-photographer-2-portfolio.html">
 									<div className="work-img">
-										<img src="images/photographer/photographer-2/photo-7.jpg" alt="" />
+										<img src={ require('./assets/images/photo-7.jpg') } alt="" />
 									</div>
 									<div className="work-intro">
 										<h3 className="work-title">Album 1</h3>
@@ -110,7 +110,7 @@ export default class About extends Component {
 							<li className="work-item wow fadeIn" data-wow-delay="0.2s">
 								<a href="special-photographer-2-portfolio.html">
 									<div className="work-img">
-										<img src="images/photographer/photographer-2/photo-8.jpg" alt="Work" />
+										<img src={ require('./assets/images/photo-8.jpg') } alt="" />
 									</div>
 									<div className="work-intro">
 										<h3 className="work-title">Album 2</h3>
@@ -124,7 +124,7 @@ export default class About extends Component {
 							<li className="work-item wow fadeIn" data-wow-delay="0.3s">
 								<a href="special-photographer-2-portfolio.html">
 									<div className="work-img">
-										<img src="images/photographer/photographer-2/photo-9.jpg" alt="Work" />
+										<img src={ require('./assets/images/photo-9.jpg') } alt="" />
 									</div>
 									<div className="work-intro">
 										<h3 className="work-title">Album 3</h3>
@@ -164,7 +164,7 @@ export default class About extends Component {
 							</div>
 							
 							<div className="align-center">
-								<img src="images/photographer/signature.png" width="170" height="55" alt="" />
+								<img src={ require('./assets/images/signature.png') } width="170" height="55" alt="" />
 							</div>
 						</div>
 					</div>

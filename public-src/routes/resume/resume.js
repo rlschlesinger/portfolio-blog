@@ -29,32 +29,17 @@ export default class Resume extends Component {
 											<hr className="white mb-30" />
 											<div>
 												<h4 className="font-alt mt-0 mb-20">Profile</h4>
-												<div>
-													<strong>Age:</strong>
-													27
-												</div>
-												<div>
-													<strong>Address:</strong>
-													245 Quigley Blvd, Ste K
-												</div>
-												<div>
-													<strong>Phone:</strong>
-													+11 3 8376 6284
-												</div>
-												<div>
-													<strong>Email:</strong>
-													<a href="#">support@bestlooker.pro</a>
-												</div>
-												<div>
-													<strong>Status:</strong>
-													Available
-												</div>
+												<div><strong>Age:</strong> 27</div>
+												<div><strong>Address:</strong> 245 Quigley Blvd, Ste K</div>
+												<div><strong>Phone:</strong> +11 3 8376 6284</div>
+												<div><strong>Email:</strong> <a href="#">support@bestlooker.pro</a></div>
+												<div><strong>Status:</strong> Available</div>
 											</div>
 										</div>
 									</div>
 									
 									<div className="col-sm-6 col-lg-offset-1">
-										<img src="images/cv-resume/image-1.jpg" alt="" />
+										<img src={ require('./assets/images/main.jpg') } alt="" />
 									</div>
 								</div>
 							</div>
@@ -286,70 +271,6 @@ export default class Resume extends Component {
 					</div>
 				</section>
 				{ /* End Education Section */ }
-				
-				<hr className="mt-0 mb-0 "/>
-				
-				{ /* Portfolio Section */ }
-				<section className="page-section" id="portfolio">
-					<div className="container relative">
-						<div className="row">
-							<div className="col-sm-3">
-								<h2 className="section-title font-alt align-left mt-0 mb-70 mb-sm-40">Portfolio</h2>
-							</div>
-							
-							<div className="col-sm-9">
-								<ul className="works-grid work-grid-3 work-grid-gut clearfix font-alt hover-white hide-titles" id="work-grid">
-									<li className="work-item mix design photography">
-										<a href="portfolio-single-1.html" className="work-ext-link">
-											<div className="work-img">
-												<img className="work-img" src="images/portfolio/projects-4.jpg" alt="Work" />
-											</div>
-											<div className="work-intro">
-												<h3 className="work-title">Space</h3>
-												<div className="work-descr">
-													External Page
-												</div>
-											</div>
-										</a>
-									</li>
-									
-									<li className="work-item mix branding">
-										<a href="portfolio-single-1.html" className="work-ext-link">
-											<div className="work-img">
-												<img className="work-img" src="images/portfolio/projects-6.jpg" alt="Work" />
-											</div>
-											<div className="work-intro">
-												<h3 className="work-title">Boy in T-shirt</h3>
-												<div className="work-descr">
-													External Page
-												</div>
-											</div>
-										</a>
-									</li>
-									
-									<li className="work-item mix design">
-										<a href="portfolio-single-1.html" className="work-ext-link">
-											<div className="work-img">
-												<img className="work-img" src="images/portfolio/projects-10.jpg" alt="Work" />
-											</div>
-											<div className="work-intro">
-												<h3 className="work-title">Model</h3>
-												<div className="work-descr">
-													External Page
-												</div>
-											</div>
-										</a>
-									</li>
-								</ul>
-								
-								<div className="align-right mt-20">
-									<a href="portfolio-boxed-gutter-3col.html" className="btn btn-mod btn-gray btn-small btn-circle">More Works <i className="fa fa-angle-right"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				{ /* End Portfolio Section */ }
 				
 				<hr className="mt-0 mb-0 "/>
 				

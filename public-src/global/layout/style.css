@@ -4207,10 +4207,23 @@ a.link-to-top{
     border-right: 1px solid #eee;
 	
 }
-.date-num{
+.date-day{
 	display: block;
 	margin-bottom: 3px;
 	font-size: 18px;
+    font-weight: 400;
+    color: #555;
+}
+.date-month{
+	display: block;
+	font-size: 14px;
+    font-weight: 300;
+    color: #999;
+}
+.date-year{
+	display: block;
+	margin-top: 3px;
+	font-size: 12px;
     font-weight: 400;
     color: #555;
 }

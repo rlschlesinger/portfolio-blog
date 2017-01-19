@@ -52,7 +52,9 @@ export default class Blog extends Component {
 								{ posts.map(({ key, title, date, blurb, video, image }) =>
 									<div key={ key } className="blog-item">
 										<div className="blog-item-date">
-											<span className="date-num">{ date.getDate() < 10 ? `0${ date.getDate() }` : `${ date.getDate() }` }</span>{ MONTHS[date.getMonth()] }
+											<span className="date-day">{ date.getDate() < 10 ? `0${ date.getDate() }` : `${ date.getDate() }` }</span>
+											<span className="date-month">{ MONTHS[date.getMonth()] }</span>
+											<span className="date-year">{ date.getFullYear() }</span>
 										</div>
 										
 										<h2 className="blog-item-title font-alt"><Link to={ `/blog/${ key }` }>{ title }</Link></h2>
