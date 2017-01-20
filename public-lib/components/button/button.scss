@@ -1,0 +1,47 @@
+.main {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 1;
+	cursor: pointer;
+	border: none;
+	padding: 0.5em 0.5em;
+	@include lift();
+}
+
+.normal {
+	background-color: $color-brand;
+	@include gray('color', 7, $fixed: true);
+	
+	@include link('&') {
+		@include theme-dark() {
+			@include gray('color', 7, $fixed: true);
+		}
+		@include theme-light {
+			@include gray('color', 7, $fixed: true);
+		}
+	}
+}
+
+.gray {
+	@include gray('background-color', 2);
+	@include gray('color', 7);
+	
+	@include link('&') {
+		@include gray('color', 7);
+	}
+}
+
+.disabled {
+	@include gray('background-color', 4);
+	@include gray('color', 7);
+	cursor: not-allowed;
+	
+	@include link('&') {
+		@include gray('color', 7);
+	}
+}
+
+.main + .main {
+	margin-left: 1em;
+}

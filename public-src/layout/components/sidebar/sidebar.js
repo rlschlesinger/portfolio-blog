@@ -24,7 +24,11 @@ export default class Sidebar extends Component {
 				<a href="#" className="sp-close-button"></a>
 				
 				<div className="sp-logo-wrap local-scroll mb-40 mb-md-10 mb-xs-0">
-					<Link to="/" className={ classes(styles.logo, 'logo') }>Rhythm Photography</Link>
+					<Link to="/" className={ classes(styles.logo, 'logo') }></Link>
+					<div className={ styles.title }>
+						<div className={ styles.name }>ROBBY SCHLESINGER</div>
+						<div className={ styles.tagline }>Writer | Web Developer | Marketer Extraordinaire</div>
+					</div>
 				</div>
 				
 				<div className="sp-wrapper" id="side-panel-menu">
@@ -34,9 +38,9 @@ export default class Sidebar extends Component {
 				</div>
 				
 				<div className="sp-social-links">
-					<a href="#" target="_blank"><i className="fa fa-facebook"></i></a>
+					<a href="#" target="_blank"><i className="fa fa-linkedin"></i></a>
+					<a href="#" target="_blank"><i className="fa fa-github-alt"></i></a>
 					<a href="#" target="_blank"><i className="fa fa-twitter"></i></a>
-					<a href="#" target="_blank"><i className="fa fa-pinterest"></i></a>
 				</div>
 			</div>
 		);

@@ -27,7 +27,7 @@ export default class Contact extends Component {
 													Call Us
 												</div>
 												<div className="ci-text">
-													+61 3 8376 6284
+													+1 775 685 4179
 												</div>
 											</div>
 											

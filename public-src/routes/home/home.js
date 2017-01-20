@@ -1,11 +1,15 @@
 import styles from './home.scss';
+import classes from 'app-utils/classes';
 
 import React, { Component } from 'react';
+import Button from 'app-components/button';
 
 const MESSAGES = [
 	'Web Developer',
 	'Marketer',
-	'Writer',
+	'Content Developer',
+	'Grant Writer',
+	'Editor',
 ];
 
 export default class Home extends Component {
@@ -44,10 +48,11 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div className={ styles.main }>
-				<section className="page-section bg-dark">
-					<div className="relative">
+				<section className="page-section">
+					<div className={ classes(styles.typewriter, 'relative') }>
 						Meet your new { MESSAGES[this.state.message].slice(0, Math.max(0, this.state.characters)) }
 					</div>
+					<Button>Test</Button>
 				</section>
 			</div>
 		);

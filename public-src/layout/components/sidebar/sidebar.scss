@@ -3,6 +3,19 @@
 	height: 119px;
 	
 	@include background();
-	background-image: url('./assets/images/logo-light.png');
+	background-image: url('./assets/images/robby-logo-white.png');
 	text-indent: -9999px;
+}
+
+.title {
+	color: white;
+}
+
+.name {
+	font-size: 1.25em;
+}
+
+.tagline {
+	margin-top: 2rem;
+	font-size: .75em;
 }

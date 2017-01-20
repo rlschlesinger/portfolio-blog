@@ -6,7 +6,7 @@ export default class Error404 extends Component {
 	render() {
 		return (
 			<div className={ styles.main }>
-				Error 404
+				<img src={ require('./assets/images/middleearthmap.jpg') } alt="Error404" />
 			</div>
 		);
 	}
