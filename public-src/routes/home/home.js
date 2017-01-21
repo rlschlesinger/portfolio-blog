@@ -2,7 +2,7 @@ import styles from './home.scss';
 import classes from 'app-utils/classes';
 
 import React, { Component } from 'react';
-import Button from 'app-components/button';
+import { Link } from 'react-router';
 
 const MESSAGES = [
 	'Web Developer',
@@ -52,7 +52,7 @@ export default class Home extends Component {
 					<div className={ classes(styles.typewriter, 'relative') }>
 						Meet your new { MESSAGES[this.state.message].slice(0, Math.max(0, this.state.characters)) }
 					</div>
-					<Button>Test</Button>
+					<Link to={ '/contact' } className={ styles.button }>Get In Touch</Link>
 				</section>
 			</div>
 		);

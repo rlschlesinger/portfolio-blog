@@ -1,3 +1,4 @@
+
 import styles from './sidebar.scss';
 import classes from 'app-utils/classes';
 
@@ -6,7 +7,6 @@ import { Link } from 'react-router';
 
 const MENU = [
 	{ label: 'Home', to: '/' },
-	{ label: 'About', to: '/about' },
 	{ label: 'Resume', to: '/resume' },
 	{ label: 'Portfolio', to: '/portfolio', children: [
 		{ label: 'WebDev', to: '/webdev' },
@@ -27,7 +27,6 @@ export default class Sidebar extends Component {
 					<Link to="/" className={ classes(styles.logo, 'logo') }></Link>
 					<div className={ styles.title }>
 						<div className={ styles.name }>ROBBY SCHLESINGER</div>
-						<div className={ styles.tagline }>Writer | Web Developer | Marketer Extraordinaire</div>
 					</div>
 				</div>
 				

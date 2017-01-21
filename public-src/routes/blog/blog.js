@@ -38,7 +38,7 @@ export default class Blog extends Component {
 							<div className="col-md-8">
 								<h1 className="hs-line-11 font-alt mb-20 mb-xs-0">Blog</h1>
 								<div className="hs-line-4 font-alt black">
-									We share our best ideas in our blog
+									Your source for tutorials, musings, and bad jokes.
 								</div>
 							</div>
 						</div>
