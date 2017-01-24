@@ -1,5 +1,5 @@
 export default [
-	require('./foo').default,
+	require('./defense-innovation').default,
 	require('./bar').default,
 	require('./bam').default,
 ];

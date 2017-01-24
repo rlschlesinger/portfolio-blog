@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 
 const MESSAGES = [
 	'Web Developer',
-	'Marketer',
+	'Marketing Consultant',
 	'Content Developer',
 	'Grant Writer',
 	'Editor',
@@ -48,7 +48,7 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div className={ styles.main }>
-				<section className="page-section">
+				<section className={ classes(styles.section, 'page-section') }>
 					<div className={ classes(styles.typewriter, 'relative') }>
 						Meet your new { MESSAGES[this.state.message].slice(0, Math.max(0, this.state.characters)) }
 					</div>

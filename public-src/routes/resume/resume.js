@@ -13,11 +13,11 @@ export default class Resume extends Component {
 							<div className="home-text">
 								<div className="row mt-60 mt-xs-20">
 									<div className="col-sm-6 col-lg-5 align-center pt-20 pt-lg-0 mb-xs-30">
-										<div className="hs-line-4 font-alt mb-20">Thomas Rhythm</div>
-										<h1 className="hs-line-15 font-alt mb-40 mb-xs-20">Freelance Web Designer</h1>
+										<div className="hs-line-4 font-alt mb-20">Robby Schlesinger</div>
+										<h1 className="hs-line-15 font-alt mb-40 mb-xs-20">Freelance Writer, Web Developer, & Marketing Consultant</h1>
 										<div className="section-text white mb-70 mb-xs-40 text-justify">
 											<p>
-												<span className="dropcap font-alt">M</span>y name is Thomas Rhythm. In&nbsp;maximus ligula lorem semper
+												<span className="dropcap font-alt">I</span>&rsquo;m an out-of-the-box, versatile problem-solver with a sense of adventure and a signature style. I write words, programs, novels, grants, marketing plans, web content, and just about anything else you can think of. Sometimes, I swim around Lake Tahoe raising funds for suicide prevention. Other times, I&rsquo;m  name is Thomas Rhythm. In&nbsp;maximus ligula lorem semper
 												metus pellentesque mattis.Maecenas volutpat, diam enim sagittis quam, id&nbsp;porta quam.
 												Sed id&nbsp;dolor consectetur fermentum nibh volutpat, accumsan purus.
 											</p>
@@ -29,10 +29,9 @@ export default class Resume extends Component {
 											<hr className="white mb-30" />
 											<div>
 												<h4 className="font-alt mt-0 mb-20">Profile</h4>
-												<div><strong>Age:</strong> 27</div>
-												<div><strong>Address:</strong> 245 Quigley Blvd, Ste K</div>
-												<div><strong>Phone:</strong> +11 3 8376 6284</div>
-												<div><strong>Email:</strong> <a href="#">support@bestlooker.pro</a></div>
+												<div><strong>Location:</strong> Reno, NV</div>
+												<div><strong>Phone:</strong> +1.755.685.4179</div>
+												<div><strong>Email:</strong> <a href="mailto:robbyschlesinger@gmail.com">robbyschlesinger@gmail.com</a></div>
 												<div><strong>Status:</strong> Available</div>
 											</div>
 										</div>
