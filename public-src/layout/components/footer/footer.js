@@ -13,9 +13,9 @@ export default class Footer extends Component {
 					</div>
 					
 					<div className="footer-social-links mb-110 mb-xs-60">
-						<a href="#" title="Facebook" target="_blank"><i className="fa fa-linkedin"></i></a>
-						<a href="#" title="Twitter" target="_blank"><i className="fa fa-github-alt"></i></a>
-						<a href="#" title="Behance" target="_blank"><i className="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/robby-schlesinger-70b5b6a3" target="_blank"><i className="fa fa-linkedin"></i></a>
+					<a href="https://github.com/rlschlesinger" target="_blank"><i className="fa fa-github-alt"></i></a>
+					<a href="https://twitter.com/rlschlesinger" target="_blank"><i className="fa fa-twitter"></i></a>
 					</div>
 				</div>
 				
