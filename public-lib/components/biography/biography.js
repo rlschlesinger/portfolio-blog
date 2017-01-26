@@ -1,16 +1,17 @@
 import styles from './biography.scss';
+import classes from 'app-utils/classes';
 
 import React, { Component } from 'react';
 
 export default class Resume extends Component {
 	render() {
 		return (
-			<div className={ styles.main }>
-				<section className="page-section bg-dark bg-dark-alfa-70" data-background="images/cv-resume/section-bg-1.jpg" id="home">
+			<div className={ classes(styles.main) }>
+				<section>
 					<div className="relative container">
 						<div className="home-content">
 							<div className="home-text">
-								<div className="row mt-60 mt-xs-20">
+								<div className={ classes(styles.content, 'row')}>
 									<div className="col-sm-6 col-lg-5 align-center pt-20 pt-lg-0 mb-xs-30">
 										<div className="hs-line-4 font-alt mb-20">Robby Schlesinger</div>
 										<h1 className="hs-line-15 font-alt mb-40 mb-xs-20">Freelance Writer, Web Developer, & Marketing Consultant</h1>
@@ -36,7 +37,7 @@ export default class Resume extends Component {
 										</div>
 									</div>
 									
-									<div className="col-sm-6 col-lg-offset-1">
+									<div className="col-sm-6">
 										<img src={ require('./assets/images/main.jpg') } alt="" />
 									</div>
 								</div>
