@@ -4,7 +4,7 @@
   "author": "Robby Schlesinger <robbyschlesinger@gmail.com>",
   "scripts": {
     "build": "npm run clean && webpack",
-    "publish": "aws s3 sync public s3://robby --acl=public-read --delete",
+    "publish": "aws --profile rls-profile s3 sync public s3://www.robbyschlesinger.com",
     "clean": "rm -rf public/assets public/index.html public/*.js public/*.css public/*.map",
     "watch": "webpack-dev-server --history-api-fallback --content-base public --hot --inline"
   },
