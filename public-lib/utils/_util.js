@@ -1,4 +1,3 @@
-import _ from 'lodash/fp';
 import ReactDOM from 'react-dom';
 
 export default class ReactUtil {
@@ -10,11 +9,11 @@ export default class ReactUtil {
 		this._inited = true;
 		this._list = [];
 		
-		_.map((event) => {
+		events.map((event) => {
 			window.addEventListener(event, () => {
-				_.map(instance => instance.update(), this._list);
+				this._list.map(instance => instance.update());
 			});
-		}, events);
+		});
 		
 		return true;
 	}
@@ -27,8 +26,6 @@ export default class ReactUtil {
 	}
 	
 	create(name, config, onRegister) {
-		name = _.kebabCase(name);
-		
 		if (this.list[name]) {
 			throw new Error(`${ this.constructor.name }: name "${ name }" already exists.`);
 		}
@@ -38,7 +35,7 @@ export default class ReactUtil {
 			element: null,
 		};
 		
-		let register = _.camelCase(`register ${ name }`);
+		let register = `register${ name }`;
 		this[register] = (element) => {
 			if (!(element instanceof HTMLElement)) {
 				element = ReactDOM.findDOMNode(element);
@@ -55,12 +52,12 @@ export default class ReactUtil {
 	}
 	
 	update(iterator) {
-		return _.map(({ element, config }) => {
+		return this.list.map(({ element, config }) => {
 			if (!element) {
 				return null;
 			}
 			
 			return iterator(element, config);
-		}, this.list);
+		});
 	}
 }
