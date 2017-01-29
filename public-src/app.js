@@ -1,7 +1,7 @@
 import GA from 'app-utils/ga';
 
 import React, { Component } from 'react';
-import { Match, Miss } from 'react-router';
+import { Match, Miss, Redirect } from 'react-router';
 import Layout from './layout';
 
 import Error404 from './routes/error404';
@@ -29,7 +29,8 @@ export default class App extends Component {
 	render() {
 		return (
 			<Layout>
-				<Match pattern="/" component={ Home } exactly />
+				<Match pattern="/" component={ () => <Redirect to="/home" /> } exactly />
+				<Match pattern="/home" component={ Home } />
 				<Match pattern="/about" component={ About } />
 				<Match pattern="/blog/:key?" component={ Blog } />
 				<Match pattern="/contact" component={ Contact } />
