@@ -30,10 +30,6 @@ export default class Resume extends Component {
 				<Icons />
 				{ /* End Section */ }
 				
-				{ /* Education Section */ }
-				<Education />
-				{ /* End Education Section */ }
-				
 				<hr className="mt-0 mb-0 "/>
 				
 				{ /* Contact Section */ }

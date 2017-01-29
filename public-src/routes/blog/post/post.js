@@ -1,4 +1,5 @@
 import styles from './post.scss';
+import classes from 'app-utils/classes';
 
 import React, { Component } from 'react';
 
@@ -26,7 +27,7 @@ export default class Post extends Component {
 					</div>
 				</section>
 				
-				<section className="page-section">
+				<section className={ classes(styles.post, 'page-section')}>
 					<div className="container relative">
 						<div className="row">
 							<div className="col-sm-10 col-sm-offset-1">

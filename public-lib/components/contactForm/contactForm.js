@@ -37,7 +37,7 @@ export default class ContactForm extends Component {
 							
 							<div className="col-sm-9">
 								<div className="section-text mb-70 mb-xs-40">
-									Curabitur eu adipiscing lacus, a iaculis diam. Nullam placerat blandit auctor. Nulla accumsan ipsum et nibh rhoncus, eget tempus sapien ultricies. Donec mollis lorem vehicula.
+									Whether you need a grant written, a website for your business, or full-time marketing support, I&rsquo;m ready to get to work for you. Drop me a line and tell me about your project. I&rsquo;ll be in touch soon.
 								</div>
 								
 								<div className="row">
@@ -50,7 +50,7 @@ export default class ContactForm extends Component {
 												Phone
 											</div>
 											<div className="ci-text">
-												+11 3 8376 6284
+												<a href="tel:17756854179">+1.755.685.4179</a>
 											</div>
 										</div>
 										
@@ -61,10 +61,10 @@ export default class ContactForm extends Component {
 												<i className="fa fa-map-marker"></i>
 											</div>
 											<div className="ci-title font-alt">
-												Address
+												Location
 											</div>
 											<div className="ci-text">
-												245 Quigley Blvd, Ste K
+												Reno, NV
 											</div>
 										</div>
 										
@@ -78,7 +78,7 @@ export default class ContactForm extends Component {
 												Email
 											</div>
 											<div className="ci-text">
-												<a href="mailto:support@bestlooker.pro">support@bestlooker.pro</a>
+												<a href="mailto:robbyschlesinger@gmail.com">robbyschlesinger@gmail.com</a>
 											</div>
 										</div>
 										

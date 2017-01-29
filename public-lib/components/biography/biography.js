@@ -7,7 +7,7 @@ export default class Resume extends Component {
 	render() {
 		return (
 			<div className={ classes(styles.main) }>
-				<section>
+				<section className={ classes(styles.bio, 'page-section bg-dark bg-dark-alfa-70')}  id="home">
 					<div className="relative container-fluid">
 						<div className="home-content">
 							<div className="home-text">
@@ -30,7 +30,7 @@ export default class Resume extends Component {
 											<div>
 												<h4 className="font-alt mt-0 mb-20">Profile</h4>
 												<div><strong>Location:</strong> Reno, NV</div>
-												<div><strong>Phone:</strong> +1.755.685.4179</div>
+												<div><strong>Phone:</strong> <a href="tel:17756854179">+1.755.685.4179</a></div>
 												<div><strong>Email:</strong> <a href="mailto:robbyschlesinger@gmail.com">robbyschlesinger@gmail.com</a></div>
 												<div><strong>Status:</strong> Available</div>
 											</div>

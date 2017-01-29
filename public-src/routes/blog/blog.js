@@ -46,33 +46,7 @@ export default class Blog extends Component {
 				</section>
 				
 				<div className={ styles.posts }>
-					<section className="page-section">
-					<div className="pagination">
-						<Link className={ classes({ disabled: page_current === 1 }) } aria-label="First" to="/blog?page=1">
-							<span aria-hidden="true" className="fa fa-angle-double-left"></span>
-							<span className="sr-only">First</span>
-						</Link>
-						<Link className={ classes({ disabled: page_current === 1 }) } aria-label="Previous" to={ `/blog?page=${ page_current - 1 }` }>
-							<span aria-hidden="true" className="fa fa-angle-left"></span>
-							<span className="sr-only">Previous</span>
-						</Link>
-						
-						{ pages.map((page) => (
-							<Link key={ page } className={ classes({ active: page === page_current }) } to={ `/blog?page=${ page }` }>
-								{ page }
-								{ page === page_current && <span className="sr-only">(current)</span> }
-							</Link>
-						)) }
-						
-						<Link className={ classes({ disabled: page_current === page_count }) } aria-label="Next" to={ `/blog?page=${ page_current + 1 }` }>
-							<span aria-hidden="true" className="fa fa-angle-right"></span>
-							<span className="sr-only">Next</span>
-						</Link>
-						<Link className={ classes({ disabled: page_current === page_count }) } aria-label="Last" to={ `/blog?page=${ page_count }` }>
-							<span aria-hidden="true" className="fa fa-angle-double-right"></span>
-							<span className="sr-only">Last</span>
-						</Link>
-					</div>
+					<section className={ classes(styles.thisSection, 'page-section')}>
 						<div className="container relative">
 							
 							<div className="row">

@@ -32,7 +32,7 @@ export default class Icons extends Component {
 									<div className="alt-features-icon white">
 										<span className="icon-piechart"></span>
 									</div>
-									<h3 className="alt-features-title">Excellent result</h3>
+									<h3 className="alt-features-title">Excellent Results</h3>
 								</div>
 							</div>
 						</div>
