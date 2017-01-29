@@ -7,7 +7,7 @@ export default class Education extends Component {
 		return (
 			<div className={ styles.main }>
 				<section className="page-section" id="education">
-					<div className="container relative">
+					<div className="container-fluid relative">
 						<div className="row">
 							<div className="col-sm-3">
 								<h2 className="section-title font-alt align-left mt-0 mb-70 mb-sm-40">Education</h2>

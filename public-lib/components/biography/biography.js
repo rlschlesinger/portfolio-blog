@@ -8,7 +8,7 @@ export default class Resume extends Component {
 		return (
 			<div className={ classes(styles.main) }>
 				<section>
-					<div className="relative container">
+					<div className="relative container-fluid">
 						<div className="home-content">
 							<div className="home-text">
 								<div className={ classes(styles.content, 'row')}>
