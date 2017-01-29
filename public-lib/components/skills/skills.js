@@ -1,13 +1,25 @@
 import styles from './skills.scss';
+import classes from 'app-utils/classes';
 
 import React, { Component } from 'react';
+import ScrollCheck from 'app-utils/scroll-check';
 
 export default class Skills extends Component {
+	constructor() {
+		super();
+		
+		this.scroll = new ScrollCheck();
+		
+		this.scroll.create('Progress', {
+			classHide: styles.hide,
+		});
+	}
+	
 	render() {
 		return (
 			<div className={ styles.main }>
 				<section>
-					<div>
+					<div className="container-fluid">
 						<div>
 							<div>
 								<h2 className="section-title font-alt align-left mt-0 mb-70 mb-sm-40">Skills</h2>
@@ -24,13 +36,13 @@ export default class Skills extends Component {
 								<div className="row">
 									<div className="col-sm-6 mb-sm-50 mb-xs-30" >
 										<div className="progress tpl-progress">
-											<div className="progress-bar" role="progressbar" div style={{ width: '100%' }}>
+											<div className={ classes(styles.progress, 'progress-bar')} ref={ this.scroll.registerProgress } style={{ width: '100%' }}>
 												Content Development: 100%
 											</div>
 										</div>
 										
 										<div className="progress tpl-progress">
-											<div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+											<div className="progress-bar" style={{ width: '95%' }}>
 												Front-End Design 95%
 											</div>
 										</div>

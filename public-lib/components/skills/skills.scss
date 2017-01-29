@@ -2,6 +2,15 @@
 	
 }
 
+.progress {
+	transition: width 1s;
+	white-space: nowrap;
+	
+	&.hide {
+		width: 0 !important;
+	}
+}
+
 .container {
 	padding: 2rem;
 	

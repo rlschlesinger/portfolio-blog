@@ -3,11 +3,33 @@ import styles from './contactForm.scss';
 import React, { Component } from 'react';
 
 export default class ContactForm extends Component {
+	constructor() {
+		super();
+		
+		this.state = {
+			submitted: false,
+		};
+	}
+	
+	submit(e) {
+		e.preventDefault();
+		
+		fetch('https://docs.google.com/forms/d/e/1FAIpQLSe8wkk0kkLb30XI_idOZT8_6rvuuOcKPgSPHEUzDqzZApu5EA/formResponse', {
+			method: 'POST',
+			mode: 'no-cors',
+			body: new FormData(document.getElementById('contact_form')),
+		}).then(() => {
+			this.setState({ submitted: true });
+		});
+		
+		return false;
+	}
+	
 	render() {
 		return (
 			<div className={ styles.main }>
 				<section className="page-section" id="contact">
-					<div className="container relative">
+					<div className="container-fluid relative">
 						<div className="row">
 							<div className="col-sm-3">
 								<h2 className="section-title font-alt align-left mt-0 mb-70 mb-sm-40">Contact</h2>
@@ -66,15 +88,15 @@ export default class ContactForm extends Component {
 										<form className="form contact-form" id="contact_form">
 											<div className="clearfix">
 												<div className="form-group">
-													<input type="text" name="name" id="name" className="input-md round form-control" placeholder="Name" pattern=".{3,100}" required />
+													<input type="text" name="entry.260940075" id="name" className="input-md round form-control" placeholder="Name" pattern=".{3,100}" required />
 												</div>
 												
 												<div className="form-group">
-													<input type="email" name="email" id="email" className="input-md round form-control" placeholder="Email" pattern=".{5,100}" required />
+													<input type="email" name="entry.533924323" id="email" className="input-md round form-control" placeholder="Email" pattern=".{5,100}" required />
 												</div>
 												
 												<div className="form-group">
-													<textarea name="message" id="message" className="input-md round form-control" style={{ height: '100px' }} placeholder="Message"></textarea>
+													<textarea name="entry.1991725719" id="message" className="input-md round form-control" style={{ height: '100px' }} placeholder="Message" required></textarea>
 												</div>
 											</div>
 											
@@ -87,7 +109,11 @@ export default class ContactForm extends Component {
 												
 												<div className="cf-right-col">
 													<div className="align-right pt-10">
-														<button className="submit_btn btn btn-mod btn-medium btn-circle" id="submit_btn">Submit</button>
+														{ this.state.submitted ? (
+															<p>Thanks</p>
+														) : (
+															<button className="submit_btn btn btn-mod btn-medium btn-circle" onClick={ (e) => this.submit(e) } id="submit_btn">Submit</button>
+														)}
 													</div>
 												</div>
 											</div>
