@@ -1,20 +1,9 @@
 import styles from './skills.scss';
-import classes from 'app-utils/classes';
 
 import React, { Component } from 'react';
-import ScrollCheck from 'app-utils/scroll-check';
+import Progress from 'app-components/progress';
 
 export default class Skills extends Component {
-	constructor() {
-		super();
-		
-		this.scroll = new ScrollCheck();
-		
-		this.scroll.create('Progress', {
-			classHide: styles.hide,
-		});
-	}
-	
 	render() {
 		return (
 			<div className={ styles.main }>
@@ -35,43 +24,15 @@ export default class Skills extends Component {
 								
 								<div className="row">
 									<div className="col-sm-6 mb-sm-50 mb-xs-30" >
-										<div className="progress tpl-progress">
-											<div className={ classes(styles.progress, 'progress-bar')} ref={ this.scroll.registerProgress } style={{ width: '100%' }}>
-												Content Development: 100%
-											</div>
-										</div>
-										
-										<div className="progress tpl-progress">
-											<div className="progress-bar" style={{ width: '95%' }}>
-												Front-End Design 95%
-											</div>
-										</div>
-										
-										<div className="progress tpl-progress">
-											<div className="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-												Node.JS: 90%
-											</div>
-										</div>
+										<Progress label="Content Development" value={ 1 } />
+										<Progress label="Front-End Design" value={ 0.95 } />
+										<Progress label="Node.JS:" value={ 0.90 } />
 									</div>
 									
 									<div className="col-sm-6 mb-sm-50 mb-xs-30">
-										<div className="progress tpl-progress">
-											<div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-												React.JS: 90%
-											</div>
-										</div>
-										
-										<div className="progress tpl-progress">
-											<div className="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-												Inbound Marketing: 100% <span>75</span>
-											</div>
-										</div>
-										
-										<div className="progress tpl-progress">
-											<div className="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-												Wordpress, % <span>65</span>
-											</div>
-										</div>
+										<Progress label="React.JS:" value={ 0.90 } />
+										<Progress label="Inbound Marketing:" value={ 0.60 } />
+										<Progress label="Wordpress" value={ 0.90 } />
 									</div>
 								</div>
 							</div>

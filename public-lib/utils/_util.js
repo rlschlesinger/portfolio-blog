@@ -39,6 +39,7 @@ export default class ReactUtil {
 		this[register] = (element) => {
 			if (!element) {
 				this.list[name].element = null;
+				onRegister(element, config);
 				return;
 			}
 			

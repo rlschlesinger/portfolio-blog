@@ -7,6 +7,14 @@ export default class ScrollCheck extends ReactUtil {
 	
 	create(name, config) {
 		return super.create(name, config, (element, config) => {
+			if (typeof config.create === 'function') {
+				config.create(element);
+			}
+			
+			if (!element) {
+				return;
+			}
+			
 			element.classList.add('animated');
 			
 			if (isVisible(element)) {
