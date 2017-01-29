@@ -19,3 +19,12 @@
 	margin-top: 2rem;
 	font-size: .75em;
 }
+
+.navigation {
+	:global(.fa.fa-angle-down) {
+		transition: transform 0.25s;
+		&:before {
+			margin-left: 2px;
+		}
+	}
+}

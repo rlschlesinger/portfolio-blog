@@ -1,4 +1,3 @@
-
 import styles from './sidebar.scss';
 import classes from 'app-utils/classes';
 
@@ -6,18 +5,24 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 const MENU = [
-	{ label: 'Home', to: '/' },
+	{ label: 'Home', to: '/home' },
 	{ label: 'Resume', to: '/resume' },
 	{ label: 'Portfolio', to: '/portfolio', children: [
-		{ label: 'WebDev', to: '/webdev' },
-		{ label: 'Writing', to: '/writing' },
-		{ label: 'Marketing', to: '/marketing' },
+		{ label: 'WebDev', to: '/portfolio/webdev' },
+		{ label: 'Writing', to: '/portfolio/writing' },
+		{ label: 'Marketing', to: '/portfolio/marketing' },
 	] },
 	{ label: 'Blog', to: '/blog' },
 	{ label: 'Contact', to: '/contact' },
 ];
 
 export default class Sidebar extends Component {
+	constructor() {
+		super();
+		
+		this.state = {};
+	}
+	
 	render() {
 		return (
 			<div className={ classes(styles.main, 'side-panel') }>
@@ -31,8 +36,40 @@ export default class Sidebar extends Component {
 				</div>
 				
 				<div className="sp-wrapper" id="side-panel-menu">
-					<ul className="sp-menu-links local-scroll">
-						{ displayMenuItems(MENU) }
+					<ul className={ classes('sp-menu-links local-scroll', styles.navigation) }>
+						{ MENU.map(({ label, to, children }, key) =>
+							<li key={ key } className={ classes(this.state[to] && 'js-opened') }>
+								{ !children || children.length === 0 ? (
+									<Link
+										to={ to }
+										activeClassName="active"
+									>{ label }</Link>
+								) : (
+									<Link
+										to={ to }
+										activeClassName="active"
+										onClick={ (e) => {
+											e.preventDefault();
+											
+											this.setState({ [to]: !this.state[to] });
+										} }
+									>
+										{ label }
+										<i className={ classes('fa fa-angle-down', this.state[to] && 'fa-rotate-180') }></i>
+									</Link>
+								) }
+								
+								{ children && (
+									<ul className="sp-sub" style={{ display: this.state[to] ? 'block' : 'none' }}>
+										{ children.map(({ label, to }, key) =>
+											<li key={ key }>
+												<Link to={ to } activeClassName="active">{ label }</Link>
+											</li>
+										) }
+									</ul>
+								) }
+							</li>
+						) }
 					</ul>
 				</div>
 				
@@ -44,18 +81,4 @@ export default class Sidebar extends Component {
 			</div>
 		);
 	}
-}
-
-function displayMenuItems(children, prefix = '') {
-	return children.map(({ label, to, children }, key) =>
-		<li key={ key }>
-			<Link to={ `${ prefix }${ to }` } activeClassName="active">{ label }</Link>
-			
-			{ children && (
-				<ul>
-					{ displayMenuItems(children, `${ prefix }${ to }`) }
-				</ul>
-			) }
-		</li>
-	);
 }
