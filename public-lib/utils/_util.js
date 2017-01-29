@@ -37,6 +37,11 @@ export default class ReactUtil {
 		
 		let register = `register${ name }`;
 		this[register] = (element) => {
+			if (!element) {
+				this.list[name].element = null;
+				return;
+			}
+			
 			if (!(element instanceof HTMLElement)) {
 				element = ReactDOM.findDOMNode(element);
 			}
