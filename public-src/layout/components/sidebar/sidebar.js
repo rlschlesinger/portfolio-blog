@@ -17,6 +17,12 @@ const MENU = [
 ];
 
 export default class Sidebar extends Component {
+	static propTypes = {
+		mobile: React.PropTypes.bool.isRequired,
+		closed: React.PropTypes.bool.isRequired,
+		onClose: React.PropTypes.func.isRequired,
+	};
+	
 	constructor() {
 		super();
 		
@@ -25,8 +31,11 @@ export default class Sidebar extends Component {
 	
 	render() {
 		return (
-			<div className={ classes(styles.main, 'side-panel') }>
-				<a href="#" className="sp-close-button"></a>
+			<div className={ classes(styles.main, 'side-panel', this.props.mobile && 'mobile', this.props.closed && 'closed') }>
+				<div
+					className={ classes('sp-close-button', this.props.mobile && 'mobile') }
+					onClick={ this.props.onClose }
+				></div>
 				
 				<div className="sp-logo-wrap local-scroll mb-40 mb-md-10 mb-xs-0">
 					<Link to="/" className={ classes(styles.logo, 'logo') }></Link>
