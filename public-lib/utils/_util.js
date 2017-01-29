@@ -52,7 +52,9 @@ export default class ReactUtil {
 	}
 	
 	update(iterator) {
-		return this.list.map(({ element, config }) => {
+		return Object.keys(this.list).map((name) => {
+			let { element, config } = this.list[name];
+			
 			if (!element) {
 				return null;
 			}
