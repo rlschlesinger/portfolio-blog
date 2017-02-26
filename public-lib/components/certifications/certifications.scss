@@ -1,0 +1,42 @@
+.main {
+	
+}
+
+.progress {
+	transition: width 1s;
+	white-space: nowrap;
+	
+	&.hide {
+		width: 0 !important;
+	}
+}
+
+.container {
+	padding: 2rem;
+	
+	.column {
+		display: inline-block;
+		width: 50%;
+		vertical-align: top;
+		
+		.header {
+			font-family: Dosis, arial, sans-serif;
+			font-size: 1.25rem;
+			color: black;
+		}
+	}
+}
+
+.skills {
+	display: block;
+	margin: 0 auto;
+	width: 75%;
+}
+
+.content {
+	padding: 10rem;
+}
+
+.row {
+	width: 100%;
+}

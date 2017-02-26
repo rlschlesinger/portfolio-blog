@@ -17,14 +17,10 @@ export default class Resume extends Component {
 										<h1 className="hs-line-15 font-alt mb-40 mb-xs-20">Freelance Writer, Web Developer, & Marketing Consultant</h1>
 										<div className="section-text white mb-70 mb-xs-40 text-justify">
 											<p>
-												<span className="dropcap font-alt">I</span>&rsquo;m an out-of-the-box, versatile problem-solver with a sense of adventure and a signature style. I write words, programs, novels, grants, marketing plans, web content, and just about anything else you can think of. Sometimes, I swim around Lake Tahoe raising funds for suicide prevention. Other times, I&rsquo;m  name is Thomas Rhythm. In&nbsp;maximus ligula lorem semper
-												metus pellentesque mattis.Maecenas volutpat, diam enim sagittis quam, id&nbsp;porta quam.
-												Sed id&nbsp;dolor consectetur fermentum nibh volutpat, accumsan purus.
+												<span className="dropcap font-alt">I</span>&rsquo;m an out-of-the-box, versatile problem-solver with a sense of adventure and a signature style. I write words, programs, novels, grants, marketing plans, web content, and just about anything else you can think of. Sometimes, I swim around Lake Tahoe raising funds for suicide prevention.
 											</p>
 											<p>
-												Phasellus consectetur vel nunc vitae tempus.
-												Maecenas commodo ipsum non est consequat euismod.Aenean sit amet urna ac velit dapibus ullamcorper
-												at ac ligula. Duis sed laoreet leo. Morbi ac semper lorem ipsum tortor.
+												Got a project or an idea? I&rsquo;d love to hear more about it.
 											</p>
 											<hr className="white mb-30" />
 											<div>

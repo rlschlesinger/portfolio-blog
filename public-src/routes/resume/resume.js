@@ -2,6 +2,7 @@ import styles from './resume.scss';
 
 import React, { Component } from 'react';
 import Biography from 'app-components/biography';
+import Certifications from 'app-components/certifications';
 import ContactForm from 'app-components/contactForm';
 import Education from 'app-components/education';
 import Experience from 'app-components/experience';
@@ -25,7 +26,7 @@ export default class Resume extends Component {
 				{ /* Expirience Section */ }
 				<Experience />
 				{ /* End Expirience Section */ }
-				
+				<Certifications />
 				{ /* Section */ }
 				<Icons />
 				{ /* End Section */ }

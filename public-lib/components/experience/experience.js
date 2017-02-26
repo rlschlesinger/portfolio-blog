@@ -65,6 +65,7 @@ export default class Experience extends Component {
 						</div>
 					</div>
 				</section>
+				<hr className="mt-0 mb-0" />
 			</div>
 		);
 	}
