@@ -6,7 +6,7 @@ export default class Icons extends Component {
 	render() {
 		return (
 			<div className={ styles.main }>
-				<section className="page-section bg-dark-lighter bg-dark-alfa-70" data-background="images/cv-resume/section-bg-1.jpg">
+				<section className="page-section bg-dark-lighter bg-dark-alfa-70" background="images/cv-resume/section-bg-1.jpg">
 					<div className="container-fluid relative">
 						<div className="row alt-features-grid font-alt">
 							<div className="col-sm-4 wow fadeInRight" data-wow-delay="0.1s">

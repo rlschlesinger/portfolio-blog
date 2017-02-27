@@ -7,11 +7,13 @@ import { Link } from 'react-router';
 const MENU = [
 	{ label: 'Home', to: '/home' },
 	{ label: 'Resume', to: '/resume' },
-	{ label: 'Portfolio', to: '/portfolio', children: [
-		{ label: 'WebDev', to: '/portfolio/webdev' },
-		{ label: 'Writing', to: '/portfolio/writing' },
-		{ label: 'Marketing', to: '/portfolio/marketing' },
-	] },
+	{ label: 'Portfolio', to: '/portfolio'
+	// , children: [
+	// 	{ label: 'WebDev', to: '/portfolio/webdev' },
+	// 	{ label: 'Writing', to: '/portfolio/writing' },
+	// 	{ label: 'Marketing', to: '/portfolio/marketing' },
+	// ]
+},
 	{ label: 'Blog', to: '/blog' },
 	{ label: 'Contact', to: '/contact' },
 ];
@@ -45,7 +47,7 @@ export default class Sidebar extends Component {
 				</div>
 				
 				<div className="sp-wrapper" id="side-panel-menu">
-					<ul className={ classes('sp-menu-links local-scroll', styles.navigation) }>
+					<ul className={ classes('sp-menu-links local-scroll', styles.navigation) } onClick={ this.props.onClose }>
 						{ MENU.map(({ label, to, children }, key) =>
 							<li key={ key } className={ classes(this.state[to] && 'js-opened') }>
 								{ !children || children.length === 0 ? (
@@ -59,7 +61,6 @@ export default class Sidebar extends Component {
 										activeClassName="active"
 										onClick={ (e) => {
 											e.preventDefault();
-											
 											this.setState({ [to]: !this.state[to] });
 										} }
 									>

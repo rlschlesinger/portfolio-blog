@@ -1,3 +1,30 @@
 .main {
+	position: static;
+}
+
+.head {
+}
+
+.project {
+}
+
+.content {
+	display:table-cell;
+	vertical-align:middle;
+	width: 100%;
+}
+
+.scrapers {
+	background-image: url('./assets/images/giphy.gif') !important;
+	background-repeat: no-repeat;
+	background-size: cover;
 	
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		display: block;
+		background-color: rgba(#27aae1, 0.75);
+	}
 }
