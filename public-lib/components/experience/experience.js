@@ -13,7 +13,7 @@ export default class Experience extends Component {
 							<div className="col-sm-3">
 								<h2 className="section-title font-alt align-left mt-0 mb-70 mb-sm-40">Experience</h2>
 							</div>
-							
+
 							<div className="col-sm-9">
 								<div className="section-text">
 									<div className="row">
@@ -27,9 +27,9 @@ export default class Experience extends Component {
 											from multiple market sectors and mixing down each episode with Adobe Audition.
 										</div>
 									</div>
-									
+
 									<hr />
-									
+
 									<div className="row">
 										<div className="col-md-2 black">2016</div>
 										<div className="col-md-10">
@@ -38,9 +38,9 @@ export default class Experience extends Component {
 											Additionally, I wrote internal and external copy across a wide range of contexts, mediums, and audiences, including a full-length online course on entrepreneurship, tech startups, and venture capital funding, with quizzes, tests, and study materials.
 										</div>
 									</div>
-									
+
 									<hr />
-									
+
 									<div className="row">
 										<div className="col-md-2 black">2015&ndash;2016</div>
 										<div className="col-md-10">
@@ -50,14 +50,14 @@ export default class Experience extends Component {
 											multiple platforms to provide customer with compelling events.
 										</div>
 									</div>
-									
+
 									<hr />
-									
+
 									<div className="row">
 										<div className="col-md-2 black">2009&ndash;2015</div>
 										<div className="col-md-10">
 											<h4 className="mt-0 mb-0">Editor & Freelance Writer</h4>
-											From novels to theses, from SBIR proposals to online courses, I&rsquo; written and edited hundreds of writing projects of varying lengths, contexts, and purposes. For examples of my writing, check out my <Link to="/portfolio/writing">writing portfolio</Link>.
+											From novels to theses, from SBIR proposals to online courses, I&rsquo;ve written and edited hundreds of writing projects of varying lengths, contexts, and purposes. For examples of my writing, check out my <Link to="/portfolio/writing">writing portfolio</Link>.
 										</div>
 									</div>
 								</div>

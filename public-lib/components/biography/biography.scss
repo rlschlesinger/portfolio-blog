@@ -1,7 +1,21 @@
 .main {
 	background-color: #111;
-	
+
 	.bio {
 		padding-bottom: 0 !important;
+	}
+
+	.titles {
+		font-size: 2rem !important;
+	}
+
+	.profilePic {
+		filter: grayscale(100%);
+		transition: 0.5s ease-in-out;
+
+		&:hover {
+			filter:grayscale(0%);
+			transition: 0.5s ease-in-out;
+		}
 	}
 }

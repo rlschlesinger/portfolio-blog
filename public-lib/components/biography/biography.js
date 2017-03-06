@@ -14,7 +14,7 @@ export default class Resume extends Component {
 								<div className={ classes(styles.content, 'row')}>
 									<div className="col-sm-6 col-lg-5 align-center pt-20 pt-lg-0 mb-xs-30">
 										<div className="hs-line-4 font-alt mb-20">Robby Schlesinger</div>
-										<h1 className="hs-line-15 font-alt mb-40 mb-xs-20">Freelance Writer, Web Developer, & Marketing Consultant</h1>
+										<h1 className={ classes(styles.titles, 'hs-line-15 font-alt mb-40 mb-xs-20')}>Freelance Writer, Web Developer, & Marketing Consultant</h1>
 										<div className="section-text white mb-70 mb-xs-40 text-justify">
 											<p>
 												<span className="dropcap font-alt">I</span>&rsquo;m an out-of-the-box, versatile problem-solver with a sense of adventure and a signature style. I write words, programs, novels, grants, marketing plans, web content, and just about anything else you can think of. Sometimes, I swim around Lake Tahoe raising funds for suicide prevention.
@@ -32,9 +32,9 @@ export default class Resume extends Component {
 											</div>
 										</div>
 									</div>
-									
-									<div className="col-sm-6">
-										<img src={ require('./assets/images/main.jpg') } alt="" />
+
+									<div className={ classes(styles.profilePic, 'col-sm-6')}>
+										<img src={ require('./assets/images/profile.png') } alt="" />
 									</div>
 								</div>
 							</div>

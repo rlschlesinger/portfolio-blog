@@ -6,19 +6,29 @@
 }
 
 .project {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+	width: 100%;
 }
 
-.content {
-	display:table-cell;
-	vertical-align:middle;
-	width: 100%;
+.interkn {
+	background-image: url('./assets/images/funding.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.corkboard {
+	background-image: url('./assets/images/corkboard.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .scrapers {
 	background-image: url('./assets/images/giphy.gif') !important;
 	background-repeat: no-repeat;
 	background-size: cover;
-	
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -27,4 +37,22 @@
 		display: block;
 		background-color: rgba(#27aae1, 0.75);
 	}
+}
+
+.whitepapers {
+	background-image: url('./assets/images/whitepaper.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.seo {
+	background-image: url('./assets/images/seo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fantasy {
+	background-image: url('./assets/images/fantasy.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
