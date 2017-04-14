@@ -33,7 +33,7 @@ export default class Blog extends Component {
 		return (
 			<div className={ styles.main }>
 				<section className="small-section bg-gray-lighter">
-					<div className="relative container align-left">
+					<div className="relative container-fluid align-left">
 						<div className="row">
 							<div className="col-md-8">
 								<h1 className="hs-line-11 font-alt mb-20 mb-xs-0">Blog</h1>
@@ -47,7 +47,7 @@ export default class Blog extends Component {
 				
 				<div className={ styles.posts }>
 					<section className={ classes(styles.thisSection, 'page-section')}>
-						<div className="container relative">
+						<div className="container-fluid relative">
 							
 							<div className="row">
 								<div className="col-sm-10 col-sm-offset-1">

@@ -2,6 +2,8 @@ import styles from './post.scss';
 import classes from 'app-utils/classes';
 
 import React, { Component } from 'react';
+import DocumentMeta from 'react-document-meta';
+import ContactForm from 'app-components/contactForm';
 
 export default class Post extends Component {
 	static propTypes = {
@@ -10,8 +12,16 @@ export default class Post extends Component {
 	};
 	
 	render() {
+		const meta = {
+			title: `${this.props.post.title}: ${this.props.post.subtitle}`,
+			description: this.props.post.blurb,
+			meta: {
+				charset: 'utf-8',
+			},
+		};
 		return (
 			<div className={ styles.main }>
+				<DocumentMeta {...meta} />
 				<section className="small-section bg-gray-lighter">
 					<div className="relative container align-left">
 						<div className="row">
@@ -28,7 +38,7 @@ export default class Post extends Component {
 				</section>
 				
 				<section className={ classes(styles.post, 'page-section')}>
-					<div className="container relative">
+					<div className="container-fluid relative">
 						<div className="row">
 							<div className="col-sm-10 col-sm-offset-1">
 								<div className="blog-item mb-80 mb-xs-40">
@@ -40,6 +50,7 @@ export default class Post extends Component {
 						</div>
 					</div>
 				</section>
+				<ContactForm />
 			</div>
 		);
 	}

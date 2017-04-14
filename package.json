@@ -31,5 +31,9 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react-document-meta": "^2.1.1",
+    "react-share": "^1.13.0"
   }
 }
