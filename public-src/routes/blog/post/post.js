@@ -2,8 +2,9 @@ import styles from './post.scss';
 import classes from 'app-utils/classes';
 
 import React, { Component } from 'react';
+import AddThis from 'app-components/add-this';
 import DocumentMeta from 'react-document-meta';
-import ContactForm from 'app-components/contactForm';
+import { Link } from 'react-router';
 
 export default class Post extends Component {
 	static propTypes = {
@@ -22,7 +23,7 @@ export default class Post extends Component {
 		return (
 			<div className={ styles.main }>
 				<DocumentMeta {...meta} />
-				<section className="small-section bg-gray-lighter">
+				<section className={classes(styles.topbar, 'small-section bg-gray-lighter')}>
 					<div className="relative container align-left">
 						<div className="row">
 							<div className="col-md-8">
@@ -32,12 +33,18 @@ export default class Post extends Component {
 										{ this.props.post.subtitle }
 									</div>
 								) }
+								<div className={ styles.share }>
+									<AddThis
+										title={ `${this.props.post.title}: ${this.props.post.subtitle}` }
+										description={ this.props.post.blurb }
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 				
-				<section className={ classes(styles.post, 'page-section')}>
+				<section className={ classes(styles.post)}>
 					<div className="container-fluid relative">
 						<div className="row">
 							<div className="col-sm-10 col-sm-offset-1">
@@ -50,7 +57,19 @@ export default class Post extends Component {
 						</div>
 					</div>
 				</section>
-				<ContactForm />
+				
+				<section className="small-section bg-dark">
+						<div className="container-fluid relative">
+
+								<div className="align-center">
+										<h3 className="banner-heading font-alt">Got an idea for a project? I&rsquo;d love to hear about it.</h3>
+										<div>
+												<Link to='/contact' className="btn btn-mod btn-w btn-medium btn-round">Start Project</Link>
+										</div>
+								</div>
+
+						</div>
+				</section>
 			</div>
 		);
 	}
